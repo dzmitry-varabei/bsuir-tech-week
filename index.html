@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/dist/blackboard.css" id="theme">
+    
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <img src="images/past-present-future.jpg" alt=""/>
+            <h2>of JavaScript</h2>
+        </section>
+
+        <section>
+            <h3>The Rolling Scopes Community</h3>
+
+            <p><img class="rs-logo" src="http://rollingscopes.com/images/logo_rs2.svg"/></p>
+            <ul>
+                <li>700+ members</li>
+                <li>25+ events (meetups, workshops)</li>
+                <li><a target="_blank" href="http://rollingscopes.com/">http://rollingscopes.com/</a></li>
+                <li>Conference: <a target="_blank" href="http://conf.rollingscopes.com/archive/2015/">http://conf.rollingscopes.com/archive/2015/</a></li>
+                <li>Training for students: <a target="_blank" href="http://school.rollingscopes.com/">http://school.rollingscopes.com/</a></li>
+            </ul>
+
+        </section>
+
+        <section>
+            <img src="images/rolling_scopes.png" height="600px" alt=""/>
+
+        </section>
+
+        <section data-background="images/old-pc-windows-95.jpg">
+            <h2 style="color:white; text-align: right;">Back to 1995</h2>
+        </section>
+
+        <section>
+            <h2>1995</h2>
+            <ul>
+                <li class="fragment">Browser War I</li>
+                <li class="fragment">Microsoft vs Netscape</li>
+                <li class="fragment">Control of the Internet</li>
+            </ul>
+        </section>
+
+        <section>
+            <img width="400px" src="images/brendan.jpg" alt=""/>
+            <h5>Brendan Eich</h5>
+
+            <p>JavaScript creator, Mozilla founder</p>
+        </section>
+
+        <section>
+            <p>First version of JavaScript was created in 10 days</p>
+
+            <p>May 6-15, 1995</p>
+        </section>
+
+        <section>
+            <img src="images/goodparts_definitiveguide.jpg" alt=""/>
+        </section>
+
+        <section>
+            <h2>Wat</h2>
+                    <pre><code contenteditable>
+                        A == B
+                        A == C
+                        B != C
+                    </code></pre>
+
+        <pre class="fragment"><code contenteditable>
+            0 == ''; // true
+            0 =='0'; // true
+            '' == '0'; //false
+        </code></pre>
+        </section>
+
+        <section>
+            <h2>Wat</h2>
+            <pre><code contenteditable>
+    ["10", "10", "10", "10"].map(parseInt);
+    //Output: [10, NaN, 2, 3]
+            </code></pre>
+        </section>
+
+        <section data-state="stopsnow" class="fixedHeight">
+            <h2>Evolution of name</h2>
+
+            <div>
+                <ul>
+                    <li>First name: <em>“Mocha”</em></li>
+                    <li class="fragment">September 1995: <em>“LiveScript”</em></li>
+                    <li class="fragment">December 1995: <em>“JavaScript”</em></li>
+                    <li class="fragment">June 1997: <em>ECMA-262</em> Ed. 1, aka <em>ES1</em></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>ECMAScript</h2>
+            <img class="nodecorations" src="images/evolution.fw.png">
+        </section>
+
+
+        <section>
+            <h3>ECMAScript Philosophy</h3>
+            <blockquote class="fragment">Don't break the web!</blockquote>
+        </section>
+
+        <section>
+            <h3>ECMAScript Philosophy</h3>
+            <ul>
+                <li>No version like python 2 and 3.</li>
+                <li class="fragment">No breaking changes.</li>
+                <li class="fragment">Fully backwards-compatibility.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Внезапно...</h3>
+            <img width="500px" src="images/snowman.jpeg" alt=""/>
+        </section>
+
+        <section>
+            <img src="images/v8.PNG" alt=""/>
+            <ul>
+                <li>
+                    V8 uses JIT (just-in-time) compilation to directly emit machine code at runtime.
+                </li>
+                <li>
+                    Open source.
+                </li>
+                <li>
+                    1,5+ mln lines of code
+                </li>
+            </ul>
+        </section>
+
+        <section><img height="500px" src="images/if_js_wrote_hemingway.jpg" alt=""/></section>
+        <section data-transition="none"><img src="images/iceberg.jpg" alt=""/></section>
+        <section data-transition="none"><img src="images/iceberg_2.jpg" alt=""/></section>
+        <section data-transition="none"><img src="images/iceberg_3.jpg" alt=""/></section>
+        <section data-transition="none"><img src="images/iceberg_4.jpg" alt=""/></section>
+
+        <section>
+            <p><em>JavaScript </em>  = <em>Java</em> + <em>Scheme</em> (Lisp) + <em>Self</em> (Smalltalk)</p>
+        </section>
+
+        <section>
+            <h1>2007</h1>
+        </section>
+
+        <section>
+            <img src="images/opensource_wins.jpg" alt=""/>
+        </section>
+
+        <section>
+            <h2>Open source wins!</h2>
+            <img src="images/Sub-Zero_Fatality_MK2.jpg" alt=""/>
+        </section>
+
+        <section>
+            <h2>Members of TC39</h2>
+            <h4>(Ecma Technical Committee 39)</h4>
+            <ul>
+                <li>Google</li>
+                <li>Apple</li>
+                <li>eBay</li>
+                <li>Mozilla</li>
+                <li>Intel</li>
+                <li>Microsoft</li>
+                <li>Facebook</li>
+                <li>...</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Open Browsers</h2>
+            <ul>
+                <li>WebKit/Blink</li>
+                <li>Chromium</li>
+                <li>Firefox</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Open Tools</h2>
+            <ul>
+                <li>Angular/Ember/React/...</li>
+                <li>Jasmine/Mocha Test Frameworks</li>
+                <li>Grunt/Gulp Task Runner</li>
+                <li>Node.js</li>
+                <li>Atom IDE</li>
+                <li>....</li>
+            </ul>
+        </section>
+        
+        <section>
+            <img src="images/framework.png" alt=""/>
+        </section>
+
+        <section>
+            <h2>Client logic</h2>
+            <img src="./images/client-server-1.fw.png">
+        </section>
+
+        <section>
+            <h2>Client logic</h2>
+            <img src="./images/client-server-2.fw.png">
+        </section>
+
+        <section>
+            <h2>Client logic</h2>
+            <img src="./images/client-server-3.fw.png">
+        </section>
+
+        <section>
+            <h2>Nowadays!</h2>
+            <img src="images/js_everywhere.jpg" alt=""/>
+        </section>
+
+        <section>
+            <p>If you don't like Java, you can use C#, Ruby, Python and so on</p>
+
+            <p class="fragment">but if you don't like JavaScript</p>
+            <p class="fragment">Shut Up and Code!</p>
+        </section>
+
+        <section>
+            <h3>JavaScript is everywhere</h3>
+            <ol>
+                <li><em>Desktop & Mobile Browsers</em></li>
+                <li class="fragment"><em>Desktop & Mobile native apps</em> (node-webkit, React Native, Tizen)</li>
+                <li class="fragment"><em>Hybrid mobile apps</em></li>
+                <li class="fragment"><em>Server</em> (Node.js…)</li>
+                <li class="fragment"><em>NoSQL Databases</em> (MongoDB, CouchDB…)</li>
+                <li class="fragment"><em>Operation Systems</em> (FirefoxOS, ChromeOS, Nintendo ES...)</li>
+                <li class="fragment">...</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>
+                reveal.js - The HTML Presentation Framework
+            </h2>
+
+            <p>Presentation inside browser</p>
+        </section>
+
+        <section>
+            <img src="images/full_stack.jpg" alt=""/>
+        </section>
+
+        <section>
+            <h2>Node.js at PayPal</h2>
+            <ul>
+                <li>Teams between 1/3 to 1/10 of Java teams</li>
+                <li class="fragment">Doubled requests per second</li>
+                <li class="fragment">35% decrease in average response time</li>
+                <li class="fragment">Lines of code shrunk by factor 3 to 5</li>
+                <li class="fragment">Development twice as fast</li>
+                <li class="fragment">JS both on frontend and backend</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Web interfaces</h3>
+            <img class="nodecorations" src="images/network.png">
+        </section>
+        <section>
+            <h3>Tessel</h3>
+            <img class="nodecorations" height="550px" src="images/rollingscopes/dima_and_tessel.jpg">
+        </section>
+        <section>
+            <h3>Tessel</h3>
+            <img class="nodecorations" src="images/tessel-code.png">
+        </section>
+        <section><h3>node-copter</h3>
+            <img height="550px" src="images/rollingscopes/parrto_ar_drone.jpg" alt=""/>
+        </section>
+        <section>
+            <h3>EPAM CEO showcase award 2014</h3>
+            <h4>August, 2015</h4>
+            <img src="images/epam_showcase_award.jpg" alt=""/>
+        </section>
+
+        <section><img src="images/dawn/televizor.jpg" alt=""/></section>
+        <section><img src="images/dawn/televizor_liberty.jpg" alt=""/></section>
+        <section><img class="nodecorations" src="images/dawn/dawn-ui.png"></section>
+
+        <section>
+            <h2>Some project facts:</h2>
+            <ul>
+                <li>Cheap hardware (1,3 Ghz, 1GB )</li>
+                <li class="fragment">Rich UI written in pure JavaScript </li>
+                <li class="fragment">10+ millions of users in 14 countries</li>
+                <li class="fragment"><a href="https://info.epam.com/en/news/official/2015/ceo-showcase-final.html">https://info.epam.com/en/news/official/2015/ceo-showcase-final.html</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Emscripten</h2>
+            <img src="images/EmscriptenToolchain.png" alt=""/>
+        </section>
+
+        <section>
+            <h2>Unreal Engine</h2>
+
+            <p class="blue">
+                <small>running in a browser</small>
+            </p>
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/c2uNDlP4RiE?rel=0&autohide=1&showinfo=0"
+                    frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Asm.js</h2>
+            <img height="550px" class="nodecorations" src="images/asmjs.png">
+        </section>
+
+        <section>
+            <p>
+                250 KLOC of C <br/>
+                compiled to asm.js (port take 5 days) <br/>
+                running in a browser <br/>
+                at half speed (in 2014)
+            </p>
+        </section>
+
+        <section>
+            <h2 style="line-height:300px;font-size: 150px; float: left;">I</h2>
+            <img style="width: 300px; border:none; background: none; box-shadow: none;" src="images/heart.png" alt=""/>
+            <h3 style="line-height:300px; font-size: 72px; float: right;">JavaScript</h3>
+        </section>
+
+        <section>
+            <h3>Future?</h3>
+        </section>
+
+        <section>
+            <h2>Thank you!</h2>
+        </section>
+
+        <section>
+            <h2>Questions</h2>
+            <a href="http://school.rollingscopes.com/js-webinar/">http://school.rollingscopes.com/js-webinar/</a>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+    Reveal.addEventListener( 'startsnow', function() {
+        // TODO: Sprinkle magic
+    }, false );
+
+    Reveal.addEventListener( 'stopsnow', function() {
+        // TODO: Sprinkle magic
+    }, false );
+
+</script>
+
+</body>
+</html>
